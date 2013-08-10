@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/cameraFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/cameraOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/sketchListButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="0dp"
+            android:adjustViewBounds="false"
+            android:padding="5dp"
+            android:src="@drawable/sketch_list_icon" />
+
+        <ImageView
+            android:id="@+id/parametersButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="0dp"
+            android:src="@drawable/parameters_icon" />
+
+        <TextView
+            android:id="@+id/selectedSketchNamePreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sketchListButton"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@+id/sketchListButton"
+            android:paddingBottom="5dp"
+            android:paddingRight="3dp"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="3"
+            android:text="Sketch"
+            android:textColor="#CCFFFFFF"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src\com\robclouth\photode\Parameter.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src\com\robclouth\layer\LayerActivity.java" />
+    </issue>
+    <issue id="ViewConstructor">
+        <ignore path="src\com\robclouth\layer\CameraPreview.java" />
+    </issue>
+</lint>
